@@ -15,16 +15,20 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            color: var(--text);
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
-            background-color: #0c0a09;
-        }
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stacks the content vertically on mobile */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto; /* Allows scrolling if content is taller than the screen */
+    background-color: #0c0a09;
+    padding: 20px 0; /* Adds breathing room at the top and bottom */
+    box-sizing: border-box;
+}
+
 
         /* Video Background Container */
         .video-background {
